@@ -1,0 +1,9 @@
+Origin: ishamu
+Label: ishamu
+Suite: main
+Version: 1.0
+Codename: ishamu
+Architectures: iphoneos-arm
+Components: main
+Description: ishamu Repo
+Support: ishamu
