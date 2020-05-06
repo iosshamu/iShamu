@@ -4,7 +4,7 @@
 
   <title>iShamu</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
 
@@ -14,6 +14,7 @@
 <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-R/oa7KS0iDoHwdh4Gyl3/fU7pgvSCt7oyuQ79pkw+e+bMWD9dzJJa+Zqd+XJS0AD" crossorigin="anonymous">
 
 
+
 <link rel="icon" type="image/png" href="site/images/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="site/images/favicon-16x16.png" sizes="16x16" />
 
@@ -21,48 +22,7 @@
 <style>
 
 
-@media (max-width: 575.98px) {
-  .description {
-    left: 0;
-    padding: 0 15px;
-    position: absolute;
-    top: 10%;
-    transform: none;
-    text-align: center;
-  }
-  
-  .description h1 {
-    font-size: 2em;
-  }
-  
-  .description p {
-    font-size: 1.2rem;
-  }
-  
-  .features {
-    margin: 0;
-  }
-}
 
-
-
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(0,0,0);
-        color: white !important;
-    }
-    * {
-        color: white !important;
-    }
-    a:link {
-        color: #0096e2;
-    }
-    a:visited {
-        color: #9d57df;
-    }
-    
-}
 
 
 
@@ -108,9 +68,7 @@ margin-right: -9%;
 
 
 
-
 </style>
-
 
 
 
@@ -124,6 +82,12 @@ margin-right: -9%;
 <body>
 
 
+<div class="container-fluid">
+  
+
+
+
+
 
 <img src="site/images/ishamuLogo.PNG" alt="iShamu" style="width:30%;"class="center">
 
@@ -132,9 +96,6 @@ margin-right: -9%;
 
 <p><span style="font-size:30px;"><strong>iShamu</strong></span></p>
 <p><span style="font-size:8px;">AutoBot, Scrappy & Yohda</span></p>
-
-<p style="color:#000000;font-size:20px;">
-<h4><a href="https://discord.gg/GUXu4uZ" target="_blank">Help and Support Discord</a></h4>
 
 
 
@@ -257,6 +218,22 @@ margin-right: -9%;
 
 
 
+
+</div>
+
+
+
+
+
+
+<div style="position: fixed; bottom: 10px; right: 0px"> 
+    <a href="https://discord.gg/9TGgyVc"> <img src="site/images/discord.PNG" style="width:70px;height:70px;"/> </a>
+</div>
+
+
+
+
+
 <script>
 function gotosite() {
   window.location = document.getElementById("menu").value;
@@ -264,26 +241,9 @@ function gotosite() {
 </script>
 
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer> 
-  const button = new Crate({
-    server: '707550581790605342',
-    channel: '707566440840167485',
-    shard: 'https://e.widgetbot.io',
-    color:  '#000'
-    
-  })
-  button.notify('Chat may be delayed up to 5mins')
-        button.toggle(false)
-    
-</script>
-
-
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
