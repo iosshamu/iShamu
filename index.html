@@ -43,6 +43,33 @@ margin-right: -9%;
 
 
 
+
+
+
+
+#cf {
+  position:relative;
+  height:40px;
+  width:200px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+
+
+
 <link rel="stylesheet" href="site/bootstrap/css/bootstrap.min.css">
 
 
@@ -86,8 +113,8 @@ margin-right: -9%;
 
 <a href="https://apps.apple.com/us/app/card-crushers-battle-game-tcg/id1341837401?uo=4&at=1010lce4"><img src="site/images/CC.JPG" alt="CC" width="100" height="100" border="0">
 <a href="https://apps.apple.com/us/app/shadow-deck-hero-card-game/id1437981505?uo=4&at=1010lce4"><img src="site/images/SD.JPG" alt="SD" width="100" height="100" border="0"></a>
-<a href="https://apps.apple.com/us/app/puppet-football-cards-manager/id1111139083?uo=4&at=1010lce4"><img src="site/images/PF.JPG" alt="PF"style= width="100" height="100" ></a>
-<a href="https://apps.apple.com/us/app/the-arcana-a-mystic-romance/id1165696961?uo=4&at=1010lce4"><img src="site/images/TA.JPG" alt="TA"width="100" height="100" border="0"></a>
+<a href="https://apps.apple.com/us/app/puppet-football-cards-manager/id1111139083?uo=4&at=1010lce4"><img src="site/images/PF.JPG" alt="PF" style=width="100" height="100" ></a>
+<a href="https://apps.apple.com/us/app/the-arcana-a-mystic-romance/id1165696961?uo=4&at=1010lce4"><img src="site/images/TA.JPG" alt="TA" width="100" height="100" border="0"></a>
 
 </marquee>
 
@@ -134,19 +161,28 @@ margin-right: -9%;
  </table>
 
 
-<table align="center">
+
+
+
+ <table align="center">
  <tbody>
  <tr>
  <td>
 
-
-<img type="image" onclick="gotosite()"  src="site/images/payButton.PNG" />
-
+<div id="cf">
+  <img class="bottom" onclick="gotosite()" src="site/images/payButton2.PNG" width="200" height="40"/>
+  <img class="top" onclick="gotosite()" src="site/images/payButton.PNG" width="200" height="40"/>
+</div>
 
 </td>
  </tr>
  </tbody>
  </table>
+
+
+
+
+
 
 
 
@@ -168,7 +204,7 @@ margin-right: -9%;
  <tr>
  <td>
 
-<p style="font-size:12px;">This is used to ensure that your Device is activated with a licence to use iShamu. How to get your Activation ID? Your Activation ID can be found when you iShamu and select a game. If you have any questions join the Discord channel linked above. License will last for a year.</p>
+<p style="font-size:12px;">This is used to ensure that your Device is activated with a licence to use iShamu. How to get your Activation ID? Your Activation ID can be found when you run iShamu and select a game. If you have any questions join the Discord channel linked above. License will last for a year.</p>
 
 </td>
  </tr>
@@ -180,8 +216,11 @@ margin-right: -9%;
 
 
 
+<img src="site/images/example.JPG" alt="example" style="width:30%;"class="center">
 
-<div style="text-align:center;"><a href="https://ibb.co/Y7N6wLg"><img src="https://i.ibb.co/7JSHL1h/8-B8355-A4-766-E-4630-8-AF9-FA9-C80-FCE2-AA.jpg" alt="8-B8355-A4-766-E-4630-8-AF9-FA9-C80-FCE2-AA"style= "width:35%" border="0"></div></a>
+
+
+<hr style="border: 2px solid Orange;" /><br />
 
 
 
