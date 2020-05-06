@@ -46,8 +46,8 @@ margin-right: -9%;
 
 #cf {
   position:relative;
-  height:40px;
-  width:200px;
+  height:45px;
+  width:220px;
   margin:0 auto;
 }
 
@@ -68,6 +68,17 @@ margin-right: -9%;
 
 
 
+divTop {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+
+
+
 </style>
 
 
@@ -81,6 +92,7 @@ margin-right: -9%;
 
 <body>
 
+<a name="top"></a>
 
 <div class="container-fluid">
   
@@ -164,8 +176,8 @@ margin-right: -9%;
  <td>
 
 <div id="cf">
-  <img class="bottom" onclick="gotosite()" src="site/images/payButton2.PNG" width="200" height="40"/>
-  <img class="top" onclick="gotosite()" src="site/images/payButton.PNG" width="200" height="40"/>
+  <img class="bottom" onclick="gotosite()" src="site/images/payButton2.PNG" width="220" height="45"/>
+  <img class="top" onclick="gotosite()" src="site/images/payButton.PNG" width="220" height="45"/>
 </div>
 
 </td>
@@ -185,7 +197,7 @@ margin-right: -9%;
  <tr>
  <td>
 
-<p style="color:#000000;font-size:17px;">WHEN PURCHASING ENTER YOUR ACTIVATION ID</p>
+<p style="color:#000000;font-size:17px;"><br>WHEN PURCHASING ENTER YOUR ACTIVATION ID</p>
 
 </td>
  </tr>
@@ -206,7 +218,7 @@ margin-right: -9%;
  </table>
 
 
-<hr style="border: 2px solid Orange;" /><br />
+<hr style="border: 2px solid Orange;" />
 
 
 
@@ -217,6 +229,60 @@ margin-right: -9%;
 <hr style="border: 2px solid Orange;" /><br />
 
 
+<h2>Games and Features</h2>
+
+<div class="container">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Card Crushers</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">description.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Puppet Football</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body"> description </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Shadow Deck</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body"> description</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">The Arcana</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body"> description </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+
+
+
+
+<hr style="border: 2px solid Orange;" />
 
 
 </div>
@@ -232,6 +298,9 @@ margin-right: -9%;
 
 
 
+<divTop> 
+<a href="#top"> <img src="site/images/uparrow.PNG" style="width:30px;height:30px;"/> </a>
+</divTop>
 
 
 <script>
