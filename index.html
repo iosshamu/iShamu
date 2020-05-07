@@ -16,6 +16,8 @@
 
 
 
+
+
 <link rel="icon" type="image/png" href="site/images/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="site/images/favicon-16x16.png" sizes="16x16" />
 
@@ -192,6 +194,66 @@ divTop {
 
 
 
+.flier {
+	pointer-events: none;
+}
+
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 30s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+
+
+
 </style>
 
 
@@ -207,6 +269,14 @@ divTop {
 
 <a name="top"></a>
 
+
+
+<div class="flier">
+<img src="site/images/gem.PNG" alt="gem" style="width:15%;">
+</div>
+
+
+
 <div class="container-fluid">
   
 
@@ -214,7 +284,7 @@ divTop {
 
 
 
-<img src="site/images/ishamuLogo.PNG" alt="iShamu" style="width:30%;"class="center">
+<a href="https://ishamu.fun"><img src="site/images/ishamuLogo.PNG" alt="iShamu" style="width:30%;"class="center"></a>
 
 
 
@@ -260,6 +330,10 @@ divTop {
 <p style="color: #000000; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"><span style="font-size:14px;"><strong>Add repo:</strong> <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://ishamu.fun" title="iShamu repo">https://ishamu.fun</a></span></p>
 
 <hr style="border: 2px solid Orange;" class="full-width"/>
+
+
+
+
 
 
 <table align="center">
@@ -333,6 +407,9 @@ divTop {
  </table>
 
 
+
+
+
 <hr style="border: 2px solid Orange;" class="full-width" />
 
 <img id="myImg" src="site/images/example.PNG" alt="example" style="width:100%;max-width:300px"class="center">
@@ -345,18 +422,23 @@ divTop {
 </div>
 
 
-<hr style="border: 2px solid Orange;" class="full-width" /><br />
+<hr style="border: 2px solid Orange;" class="full-width" />
 
 
-<h2>Games and Features</h2>
+
+
+
+
+
+<h5><b>Games and Features</b></h5>
 
 <div class="container">
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">
+        <h6 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Card Crushers</a>
-        </h4>
+        </h6>
       </div>
       <div id="collapse1" class="panel-collapse collapse in">
         <div class="panel-body"><li>Generates Premium Currency (Gems)
@@ -367,35 +449,35 @@ divTop {
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">
+        <h6 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Puppet Football</a>
-        </h4>
+        </h6>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
         <div class="panel-body"><li>Generates Premium Currency (Gems)
 <li>Generates Non-Premium Currency (Gold)
-<li>Generates & Opens Premium Chests
-<li>Auto-Win Battles (Awards: Crowns, Clan Points, Event Points)</div>
+<li>Generates & Opens Premium Card Packs
+<li>Auto-Win Battles (Awards: trophies, Event Points)</div>
       </div>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">
+        <h6 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Shadow Deck</a>
-        </h4>
+        </h6>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
         <div class="panel-body"><li>Generates Premium Currency (Gems)
 <li>Generates Non-Premium Currency (Gold)
 <li>Generates & Opens Premium Chests
-<li>Auto-Win Battles (Awards: Crowns, Clan Points, Event Points)</div>
+<li>Auto-Win Battles (Awards: trophies, Clan Points, Event Points)</div>
       </div>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">
+        <h6 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">The Arcana</a>
-        </h4>
+        </h6>
       </div>
       <div id="collapse4" class="panel-collapse collapse">
         <div class="panel-body"><li>Generates Premium Currency (Coins)
@@ -426,7 +508,7 @@ divTop {
  <td>
 
 </style>
-<p style="color:#FFFFFF;font-size:30px;">Installation</p>
+<p style="color:#FFFFFF;font-size:25px;">Installation</p>
 
 </td>
  </tr>
@@ -436,13 +518,13 @@ divTop {
 
 
 
-<h3>Step 1: Jailbreak iOS</h3>
+<h5><b>Step 1: Jailbreak iOS</b></h5>
 <p>Visit <a href='https://www.reddit.com/r/jailbreak/'>Reddit Jailbreak</a> for assistance on jailbreaking your device.</p>
 
-<h3>Step 2: Add Repo</h3>
+<h5><b>Step 2: Add Repo</b></h5>
 <p>Add repo <a href='cydia://url/https://cydia.saurik.com/api/share#?source=https://ishamu.fun'> https://ishamu.fun</a> to Cydia. Click the link and “Install the Source”</p>
 
-<h3>Step 3: Install Package</h3>
+<h5><b>Step 3: Install Package</b></h5>
 <p>Search in Cydia for “iShamu” install the package. “AutoTouch” and “cURL” will also be installed.</p>
 
 
@@ -457,7 +539,7 @@ divTop {
  <td>
 
 </style>
-<p style="color:#FFFFFF;font-size:30px;">How to use</p>
+<p style="color:#FFFFFF;font-size:25px;">How to use</p>
 
 </td>
  </tr>
@@ -467,13 +549,13 @@ divTop {
 
 
 
-<h3>Step 1: Run iShamu</h3>
+<h5><b>Step 1: Run iShamu</b></h5>
 <p>Hold down the decrease volume button. Select iShamu from the list.</p>
 
-<h3>Step 2: iShamu menu</h3>
+<h5><b>Step 2: iShamu menu</b></h5>
 <p>You can select the game from the list you want to use iShamu with.</p>
 
-<h3>Step 3: Licence</h3>
+<h5><b>Step 3: Licence</b></h5>
 <p>iShamu Requires a licence for each game. AutoTouch also requires a licence. AutoTouch licence can be purchased from the AutoTouch app in settings.</p>
 
 
@@ -497,7 +579,6 @@ divTop {
 
 </footer>
 <!-- Footer -->
-
 
 
 
