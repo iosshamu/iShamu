@@ -254,6 +254,41 @@ divTop {
 
 
 
+
+
+@-webkit-keyframes spaceboots {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake:hover,
+.shake:focus {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.5s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: linear;
+}
+
+.shakeonLoad {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.5s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: linear;
+}
+
+
+
 </style>
 
 
@@ -283,13 +318,12 @@ divTop {
 
 
 
-
 <a href="https://ishamu.fun"><img src="site/images/ishamuLogo.PNG" alt="iShamu" style="width:30%;"class="center"></a>
 
 
 
-
 <p><span style="font-size:30px;"><strong>iShamu</strong></span></p>
+
 <p><span style="font-size:8px;">AutoBot, Scrappy & Yodah</span></p>
 
 
@@ -327,7 +361,14 @@ divTop {
 
 <span style="font-size:20px;"><em> iShamu </em> generates in game currency and automatic wins in a variety of server based games, without the need to modify game files.</span></p>
 
-<p style="color: #000000; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"><span style="font-size:14px;"><strong>Add repo:</strong> <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://ishamu.fun" title="iShamu repo">https://ishamu.fun</a></span></p>
+<p><strong>Add repo: </strong>
+
+<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://ishamu.fun" href="https://ishamu.fun"><img src="site/images/cydia.PNG" alt="iShamu" style= width="60" height="60" class="shake";></a>
+
+<a href="sileo://source/https://ishamu.fun" href="https://ishamu.fun"><img src="site/images/sileo.PNG" alt="iShamu" style= width="60" height="60" class="shake";></a>
+
+<a href="zbra://sources/add/https://ishamu.fun" href="https://ishamu.fun"><img src="site/images/zebra.PNG" alt="iShamu" style= width="60" height="60" class="shake";></a> https://ishamu.fun </span></p>
+
 
 <hr style="border: 2px solid Orange;" class="full-width"/>
 
@@ -590,9 +631,8 @@ divTop {
 
 
 <div style="position: fixed; bottom: 10px; right: 0px"> 
-    <a href="https://discord.gg/9TGgyVc"> <img src="site/images/discord.PNG" style="width:70px;height:70px;"/> </a>
+    <a href="https://discord.gg/9TGgyVc"> <img src="site/images/discord.PNG" style="width:70px;height:70px;" class="shakeonLoad"/> </a>
 </div>
-
 
 
 <divTop> 
@@ -638,9 +678,26 @@ function gotosite() {
 </script>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+
+<script>
+function rotate(){
+var img=document.getElementById('image');
+img.setAttribute('style','transform:rotate(180deg)');
+}
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
 
 </body>
 </html>
